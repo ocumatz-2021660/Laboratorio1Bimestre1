@@ -259,6 +259,151 @@ iframe{
     transition: 0.3s;
 }
 
+/*Detalles contacto*/
+
+.pestana-emergente-detalles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 102;
+    background: rgba(62, 79, 231, 0.397); 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.detalles-contacto {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.encabezado-detalles {
+    padding: 15px 25px;
+    border-bottom: 1px solid var(--borde);
+    width: 100%;
+}
+
+.encabezado-detalles h3 {
+    margin: 0;
+    font-weight: 400;
+    color: var(--texto-gris);
+}
+
+.contenedor-detalles-contacto {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 40px;
+}
+
+.vista-usuario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--borde);
+    padding-right: 30px;
+}
+
+.img-personal-detalle img {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.vista-usuario h2 {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.seccion-btn-detalle {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.seccion-btn-detalle button {
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-salir {
+    background: transparent;
+    border: 2px solid var(--texto-gris);
+    color: var(--texto-gris);
+}
+
+.btn-salir:hover {
+    background: var(--texto-gris);
+    color: white;
+}
+
+
+.btn-editar{
+    background: transparent;
+    border: 2px solid var(--seleccionado);
+    color: var(--seleccionado);
+}
+
+.btn-editar:hover {
+    background: var(--seleccionado);
+    color: white;
+}
+
+.datos-detalle-usuario {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.fila-detalle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.grupo-detalle {
+    flex: 1;
+}
+
+.grupo-detalle h3 {
+    font-size: 0.95rem;
+    color: var(--texto-gris);
+    font-weight: 400;
+    margin: 0;
+}
+
+.grupo-detalle strong {
+    display: block;
+    color: #222;
+    font-size: 1.05rem;
+    margin-top: 5px;
+}
+
+
 @media (max-width: 480px) {
   .fila-formulario {
     flex-direction: column;
