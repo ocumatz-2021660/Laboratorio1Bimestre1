@@ -115,7 +115,7 @@ iframe{
 
 /*Nuevo Contacto*/
 
-.Fondo-desenfocar{
+.Fondo-desenfocar{    
     position: fixed;
     top: 0;
     left: 0;
@@ -123,7 +123,7 @@ iframe{
     width: 100%;
     z-index: 102;
     background: rgba(62, 79, 231, 0.397); 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }

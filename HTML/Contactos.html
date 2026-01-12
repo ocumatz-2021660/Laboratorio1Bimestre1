@@ -33,7 +33,7 @@
         <iframe src="ListaContactos.html"></iframe>
 
     </main>
-    <button class="btn-agregar">+</button>
+    <button class="btn-agregar" onclick="abrirNuevoContacto()">+</button>
 
     <div id="pestaña-emergente" class="Fondo-desenfocar">
 
@@ -56,10 +56,10 @@
                 <form action="#" class="formulario-nuevo-contacto"> 
 
                     <label for="">Nombre Contacto</label>
-                    <input type="text">
+                    <input type="text" placeholder="Sebastian">
 
                     <label for="">Apellido Contacto</label>
-                    <input type="text">
+                    <input type="text" placeholder="Cumatz">
 
                     <label for="">No. Telefono</label>
                     <input type="number" max="8" min="8" placeholder="55895932">
@@ -70,7 +70,7 @@
 
             <div class="section-btn">
 
-                <button class="btn-cancelar">Cancelar</button>
+                <button class="btn-cancelar" onclick="cerrarNuevoContacto()">Cancelar</button>
                 <button class="btn-new-contacto">Agregar</button>
 
             </div>
@@ -78,7 +78,6 @@
         </div>
 
     </div>
-
-
+    <script src="../JS/nuevoContacto.js"></script>
 </body>
 </html>
