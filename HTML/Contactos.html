@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Contactos.css">
     <title>Agenda Digital</title>
 </head>
+
 <body>
     <header>
 
@@ -20,7 +22,7 @@
             <span>Usuario: <strong>Administrador</strong></span>
 
         </div>
-        
+
     </header>
     <aside>
         <div class="nav-item">Inicio</div>
@@ -53,16 +55,62 @@
 
             <div class="info-nuevo-contacto">
 
-                <form action="#" class="formulario-nuevo-contacto"> 
+                <form action="#" class="formulario-nuevo-contacto">
 
-                    <label for="">Nombre Contacto</label>
-                    <input type="text" placeholder="Sebastian">
+                    <div class="fila-formulario">
 
-                    <label for="">Apellido Contacto</label>
-                    <input type="text" placeholder="Cumatz">
+                        <div class="grupo-formulario">
 
-                    <label for="">No. Telefono</label>
-                    <input type="number" max="8" min="8" placeholder="55895932">
+                            <label for="">Nombre Contacto</label>
+                            <input type="text" placeholder="Sebastian" max="250">
+
+                        </div>
+
+                        <div class="grupo-formulario">
+
+                            <label for="">Apellido Contacto</label>
+                            <input type="text" placeholder="Cumatz" max="250">
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="fila-formulario">
+
+                        <div class="grupo-formulario">
+
+                            <label for="">No. Telefono</label>
+                            <input type="number" max="8" min="8" placeholder="55895932">
+
+                        </div>
+
+                        <div class="grupo-formulario">
+
+                            <label for="">Profesión</label>
+                            <input type="text" max="250" placeholder="Mestro">
+
+                        </div>
+
+                    </div>
+
+                    <div class="fila-formulario">
+
+                        <div class="grupo-formulario">
+
+                            <label for="">Correo Electronico</label>
+                            <input type="email" placeholder="correoelectronico@gmail.com" min="250">
+
+                        </div>
+
+                        <div class="grupo-formulario">
+
+                            <label for="">Ubicación</label>
+                            <input type="text" max="250" placeholder="Zona 6 Mixco">
+
+                        </div>
+
+                    </div>
 
                 </form>
 
@@ -80,4 +128,5 @@
     </div>
     <script src="../JS/nuevoContacto.js"></script>
 </body>
+
 </html>
