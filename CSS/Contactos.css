@@ -259,3 +259,64 @@ iframe{
     transition: 0.3s;
 }
 
+@media (max-width: 480px) {
+  .fila-formulario {
+    flex-direction: column;
+  }
+  .contenido-nuevo-contacto{
+    overflow: scroll;
+  }
+  aside {
+        display: fixed; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        top: 0;        
+        width: 100%;
+        height: auto;
+        border-top: 1px solid var(--borde);
+        overflow: auto;
+    }
+    main {
+        margin-left: 0; 
+        padding: 10px;
+    }
+   
+    .contenido-nuevo-contacto {
+        width: 95%;
+        max-height: 90vh;
+        overflow-y: auto; 
+    }
+
+    .header-nuevo-contacto{
+        max-height: 20vh;
+    }
+    .fila-formulario {
+        flex-direction: column; 
+        gap: 0;
+    }
+
+    .contenido-imagen-personal {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contenido-imagen-personal img {
+        width: 80px; 
+    }
+
+    .section-btn {
+        width: 90%;
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .btn-cancelar, .btn-new-contacto {
+        width: 100%; 
+    }
+    
+    .header-izquierda h3 {
+        font-size: 1rem; 
+    }
+}
+
