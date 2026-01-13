@@ -25,14 +25,14 @@
 
     </header>
     <aside>
-        <div class="nav-item">Inicio</div>
-        <div class="nav-item">Favoritos</div>
+        <div class="nav-item" onclick="verInicio()">Inicio</div>
+        <div class="nav-item" onclick="mostrarSoloFavoritos()">Favoritos</div>
         <div class="nav-item">TodoList</div>
     </aside>
 
     <main>
 
-        <iframe src="ListaContactos.html"></iframe>
+        <iframe class="vista-frame" src="ListaContactos.html"></iframe>
 
     </main>
     <button class="btn-agregar" onclick="abrirNuevoContacto()">+</button>
