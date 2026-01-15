@@ -45,4 +45,11 @@ function guardarTarea() {
     document.getElementById('nueva-tarea').value = '';
     renderizarTareas();
 }
+function prepararEdicion(index) {
+    document.getElementById('nueva-tarea').value = tareas[index].texto;
+    document.getElementById('prioridad-tarea').value = tareas[index].prioridad;
+    document.getElementById('indice-tarea').value = index;
+    document.getElementById('btn-accion').innerText = "Guardar Cambios";
+}
+
  
