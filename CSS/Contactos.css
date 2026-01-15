@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
     --primer-color: #FAE3E5;
     --segundo-color: #FAEDE3;
     --opciones-nav: #ffffff;
@@ -10,7 +10,7 @@
     --borde: #dadce0;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -20,7 +20,7 @@ body{
     /*overflow: hidden;*/
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -32,25 +32,30 @@ header{
     border-bottom: 1px solid var(--borde);
     z-index: 100;
 }
-.header-izquierda{
+
+.header-izquierda {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.header-izquierda img{
+
+.header-izquierda img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-.header-derecho{
+
+.header-derecho {
     display: flex;
     align-items: center;
     margin-right: 40px;
 }
-.header-derecho span{
+
+.header-derecho span {
     font-weight: 350;
 }
-aside{
+
+aside {
     position: fixed;
     top: 64px;
     left: 0;
@@ -61,8 +66,8 @@ aside{
     padding-top: 20px;
 }
 
-.nav-item{
-    padding: 12px 24px;   
+.nav-item {
+    padding: 12px 24px;
     display: flex;
     align-items: center;
     color: var(--texto-gris);
@@ -70,25 +75,29 @@ aside{
     border-radius: 0 25px 25px 0;
     margin-right: 10px;
 }
+
 .nav-item.active {
     background-color: #e8f0fe;
     color: var(--seleccionado);
 }
-main{
+
+main {
     margin-left: 250px;
     margin-top: 64px;
     height: 100vh;
     padding: 20px;
     box-sizing: border-box;
 }
-iframe{
+
+iframe {
     width: 100%;
     height: 100%;
     border: 1px solid var(--borde);
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.4);
 }
-.btn-agregar{
+
+.btn-agregar {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -101,12 +110,13 @@ iframe{
     align-items: center;
     font-size: 24px;
     color: var(--seleccionado);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     border: none;
     transition: 0.3s;
 }
-.btn-agregar:hover{
+
+.btn-agregar:hover {
     transition: 0.3s;
     background-color: white;
     color: black;
@@ -115,20 +125,20 @@ iframe{
 
 /*Nuevo Contacto*/
 
-.Fondo-desenfocar{    
+.Fondo-desenfocar {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 102;
-    background: rgba(62, 79, 231, 0.397); 
+    background: rgba(62, 79, 231, 0.397);
     display: none;
     justify-content: center;
     align-items: center;
 }
 
-.contenido-nuevo-contacto{
+.contenido-nuevo-contacto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +150,8 @@ iframe{
     background: white;
     overflow: hidden;
 }
-.header-nuevo-contacto{
+
+.header-nuevo-contacto {
     background: rgba(255, 255, 255, 0.35);
     display: flex;
     justify-content: flex-start;
@@ -148,12 +159,14 @@ iframe{
     margin-left: 25px;
     width: 100%;
     height: auto;
-    border-bottom: 1px solid var(--borde);    
+    border-bottom: 1px solid var(--borde);
 }
-.header-nuevo-contacto h3{
+
+.header-nuevo-contacto h3 {
     font-weight: 350;
 }
-.contenido-imagen-personal{
+
+.contenido-imagen-personal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,12 +174,14 @@ iframe{
     height: auto;
     padding: 25px;
 }
-.contenido-imagen-personal img{
+
+.contenido-imagen-personal img {
     border-radius: 50%;
     width: 120px;
     height: auto;
 }
-.info-nuevo-contacto{
+
+.info-nuevo-contacto {
     background: rgba(255, 255, 255, 0.35);
     width: 85%;
     height: auto;
@@ -178,19 +193,21 @@ iframe{
     border-radius: 15px;
     border: 1px solid var(--borde);
 }
-.formulario-nuevo-contacto{
+
+.formulario-nuevo-contacto {
     display: flex;
     flex-direction: column;
     height: auto;
     gap: 10px;
 }
 
-.fila-formulario{
+.fila-formulario {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-.grupo-formulario{
+
+.grupo-formulario {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -198,21 +215,23 @@ iframe{
 }
 
 
-.formulario-nuevo-contacto label{
+.formulario-nuevo-contacto label {
     font-size: 0.89rem;
     color: black;
     margin-bottom: 1px;
     font-weight: 600;
 }
-.formulario-nuevo-contacto input{
+
+.formulario-nuevo-contacto input {
     padding: 8px;
     margin-bottom: 20px;
     border: none;
     border-bottom: 1px solid #73b0f1;
-    width: 190px; 
+    width: 190px;
     height: auto;
 }
-.section-btn{
+
+.section-btn {
     background: rgba(255, 255, 255, 0.35);
     width: 70%;
     height: auto;
@@ -226,7 +245,8 @@ iframe{
     border-radius: 15px;
     border: 1px solid var(--borde);
 }
-.btn-cancelar{
+
+.btn-cancelar {
     padding: 10px 25px;
     width: 30%;
     cursor: pointer;
@@ -237,12 +257,14 @@ iframe{
     border-radius: 25px;
     transition: 0.3s;
 }
-.btn-cancelar:hover{
-    background:#f54949;
-    color:white;
+
+.btn-cancelar:hover {
+    background: #f54949;
+    color: white;
     transition: 0.3s;
 }
-.btn-new-contacto{
+
+.btn-new-contacto {
     padding: 10px 25px;
     width: 30%;
     cursor: pointer;
@@ -253,9 +275,10 @@ iframe{
     border-radius: 25px;
     transition: 0.3s;
 }
-.btn-new-contacto:hover{
-    background:#499DF5;
-    color:white;
+
+.btn-new-contacto:hover {
+    background: #499DF5;
+    color: white;
     transition: 0.3s;
 }
 
@@ -268,8 +291,8 @@ iframe{
     height: 100%;
     width: 100%;
     z-index: 102;
-    background: rgba(62, 79, 231, 0.397); 
-    display: none; 
+    background: rgba(62, 79, 231, 0.397);
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -282,7 +305,7 @@ iframe{
     max-width: 800px;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .encabezado-detalles {
@@ -321,7 +344,7 @@ iframe{
     height: auto;
     border-radius: 50%;
     margin-bottom: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .vista-usuario h2 {
@@ -359,7 +382,7 @@ iframe{
 }
 
 
-.btn-editar{
+.btn-editar {
     background: transparent;
     border: 2px solid var(--seleccionado);
     color: var(--seleccionado);
@@ -403,41 +426,128 @@ iframe{
     margin-top: 5px;
 }
 
+/* USUARIO */
+
+.usuario-contenedor {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+}
+.img-perfil{
+    width: 5vw;
+    max-width: 4vw;
+    height: auto;
+    border-radius: 50%;
+    box-shadow:0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-emergente-usuario {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    padding: 25px;
+    z-index: 100;
+}
+
+.menu-emergente-usuario p {
+    font-size: 0.85rem;
+    color: var(--texto-gris);
+    margin: 0 0 10px 0;
+}
+
+.menu-emergente-usuario button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #f54949;
+    background: rgba(255, 255, 255, 0.35);
+    border: 2.5px solid #f54949;
+    border-radius: 25px;
+    margin-top: 10px;
+    transition: 0.3s;
+
+}
+.menu-emergente-usuario button:hover {
+    background-color: #f54949;    
+    color: white ;
+
+}
+.contenedor-foto-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.contenedor-foto-menu img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--borde);
+}
+
+.info-texto-menu {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info-texto-menu strong {
+    display: block;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.info-texto-menu p {
+    font-size: 0.8rem;
+    color: var(--texto-gris);
+    margin: 0;
+}
+
 
 @media (max-width: 480px) {
-  .fila-formulario {
-    flex-direction: column;
-  }
-  .contenido-nuevo-contacto{
-    overflow: scroll;
-  }
-  aside {
-        display: fixed; 
+    .fila-formulario {
+        flex-direction: column;
+    }
+
+    .contenido-nuevo-contacto {
+        overflow: scroll;
+    }
+
+    aside {
+        display: fixed;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 0;
-        top: 0;        
+        top: 0;
         width: 100%;
         height: auto;
         border-top: 1px solid var(--borde);
         overflow: auto;
     }
+
     main {
-        margin-left: 0; 
+        margin-left: 0;
         padding: 10px;
     }
-   
+
     .contenido-nuevo-contacto {
         width: 95%;
         max-height: 90vh;
-        overflow-y: auto; 
+        overflow-y: auto;
     }
 
-    .header-nuevo-contacto{
+    .header-nuevo-contacto {
         max-height: 20vh;
     }
+
     .fila-formulario {
-        flex-direction: column; 
+        flex-direction: column;
         gap: 0;
     }
 
@@ -447,21 +557,21 @@ iframe{
     }
 
     .contenido-imagen-personal img {
-        width: 80px; 
+        width: 80px;
     }
 
     .section-btn {
         width: 90%;
-        flex-direction: column; 
+        flex-direction: column;
         gap: 10px;
     }
 
-    .btn-cancelar, .btn-new-contacto {
-        width: 100%; 
+    .btn-cancelar,
+    .btn-new-contacto {
+        width: 100%;
     }
-    
+
     .header-izquierda h3 {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 }
-
