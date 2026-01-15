@@ -509,7 +509,32 @@ iframe {
     margin: 0;
 }
 
-
+/*Todo List*/
+.contenedor-inputs-todo {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--borde);
+    align-items: center;
+}
+ 
+.contenedor-inputs-todo input {
+    flex: 2;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid var(--seleccionado);
+    background: transparent;
+}
+ 
+.contenedor-inputs-todo select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--borde);
+}
 @media (max-width: 480px) {
     .fila-formulario {
         flex-direction: column;
