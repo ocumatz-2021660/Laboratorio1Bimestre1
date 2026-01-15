@@ -1,3 +1,34 @@
+/*Guardar Usuario/ */
+
+function cargarDatosPerfil() {
+    const nombre = localStorage.getItem('usuarioNombre');
+    const correo = localStorage.getItem('usuarioCorreo');
+
+    if (nombre && correo) {
+            document.getElementById('nombreUsuarioMenu').innerText = nombre;
+            document.getElementById('correoUsuarioMenu').innerText = correo;        
+    }    
+}
+
+function MenuUsuario() {
+    const menu = document.getElementById('menu-usuario');
+    if (menu) {
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+}
+
+function cerrarSesion() {
+    localStorage.clear();
+    window.location.href = "../HTML/index.html"; 
+}
+
+cargarDatosPerfil();
+
+
 /*Nuevo contactos*/ 
 function abrirNuevoContacto() {
     document.getElementById("pestaña-emergente").style.display = "flex";
