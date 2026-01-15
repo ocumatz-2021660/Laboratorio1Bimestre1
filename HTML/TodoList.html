@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Contactos.css">
+    <title>Agenda Digital</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="header-izquierda">
+
+            <img src="#" alt="Logo">
+            <h3>Agenda Digital</h3>
+
+        </div>
+        <div class="header-derecho">
+
+            <div class="header-derecho">
+                <div class="usuario-contenedor" onclick="MenuUsuario()">
+                    <img class="img-perfil" src="../Img/img-defaul.webp" alt="Foto Perfil">
+                    <div id="menu-usuario" class="menu-emergente-usuario">
+                        <div class="contenedor-foto-menu">
+                            <img src="../Img/img-defaul.webp" alt="Foto Perfil" id="imgPerfilMenu">
+                        </div>
+
+                        <div class="info-texto-menu">
+                            <strong id="nombreUsuarioMenu">Nombre Usuario</strong>
+                            <p id="correoUsuarioMenu">correo@kinal.edu.gt</p>
+                        </div>
+
+                        <hr>
+                        <button onclick="cerrarSesion()">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <aside>
+        <div class="nav-item" onclick="verInicio()">Inicio</div>
+        <div class="nav-item" onclick="mostrarSoloFavoritos()">Favoritos</div>
+        <div class="nav-item">TodoList</div>
+    </aside>
+    <main>
+        <div class="contenedor-todo">
+            <div class="header-seccion">
+                <h2>Mi Lista de Pendientes</h2>
+            </div>
+
+            <div class="contenedor-inputs-todo">
+                <input type="hidden" id="indice-tarea" value="-1">
+                <input type="text" id="nueva-tarea" placeholder="¿Qué tienes pendiente?">
+                <select id="prioridad-tarea">
+                    <option value="1">Prioridad Alta</option>
+                    <option value="2">Prioridad Media</option>
+                    <option value="3">Prioridad Baja</option>
+                </select>
+                <button class="btn-new-contacto" onclick="guardarTarea()" id="btn-accion">Agregar</button>
+            </div>
+
+            <table class="Tabla-contactos">
+                <thead>
+                    <tr>
+                        <th>Prioridad</th>
+                        <th>Tarea</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-tareas">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="../JS/todoList.js"></script>
+    <script src="../JS/nuevoContacto.js"></script>
+
+</body>
+
+</html>
