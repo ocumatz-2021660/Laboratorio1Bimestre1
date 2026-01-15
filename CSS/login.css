@@ -16,6 +16,7 @@ body{
 .contenedor{
     width: 95%;
     max-width: 1000px;
+    height: auto;
     margin-top: 35px;
     background-color: transparent;
     display: flex;
@@ -63,7 +64,6 @@ body{
 .contenedor-opciones-registro{
     min-height: 220px;
     height: auto;
-    max-height: 221px;
     background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(8px);
     display: flex;
@@ -104,7 +104,7 @@ body{
     background-color: #93F086;
     border: 1px solid #157306;
     border-radius: 25px;
-    transition: 0.3s;
+    transition: 0.3s;   
 }
 .btn-inisiarSesion:hover{
     background-color: #5CC949;
