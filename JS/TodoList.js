@@ -51,5 +51,11 @@ function prepararEdicion(index) {
     document.getElementById('indice-tarea').value = index;
     document.getElementById('btn-accion').innerText = "Guardar Cambios";
 }
-
+function eliminarTarea(index) {
+        tareas.splice(index, 1);
+        renderizarTareas();
+    
+}
+ 
+document.addEventListener('DOMContentLoaded', renderizarTareas);
  
