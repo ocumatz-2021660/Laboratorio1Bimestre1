@@ -58,4 +58,8 @@ function eliminarTarea(index) {
 }
  
 document.addEventListener('DOMContentLoaded', renderizarTareas);
+
+function menuContactos(){
+    window.location.href = "../HTML/Contactos.html"
+}
  

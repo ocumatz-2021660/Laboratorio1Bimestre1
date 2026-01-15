@@ -67,6 +67,7 @@ aside {
 }
 
 .nav-item {
+    margin-top: 15px;
     padding: 12px 24px;
     display: flex;
     align-items: center;

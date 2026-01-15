@@ -89,3 +89,6 @@ function verInicio() {
         iframe.contentWindow.mostrarTodosLosContactos();
     }
 }
+function mostrarTodoList(){
+    window.location.href = "../HTML/TodoList.html"; 
+}
