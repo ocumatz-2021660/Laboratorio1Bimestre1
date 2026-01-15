@@ -19,7 +19,24 @@
         </div>
         <div class="header-derecho">
 
-            <span>Usuario</span>
+            <div class="header-derecho">
+                <div class="usuario-contenedor" onclick="toggleMenuUsuario()">
+                    <span id="nombreUsuarioHeader">Usuario</span>
+                    <div id="menu-usuario" class="menu-emergente-usuario">
+                        <div class="contenedor-foto-menu">
+                            <img src="../Img/img-defaul.webp" alt="Foto Perfil" id="imgPerfilMenu">
+                        </div>
+
+                        <div class="info-texto-menu">
+                            <strong id="nombreUsuarioMenu">Nombre Usuario</strong>
+                            <p id="correoUsuarioMenu">correo@kinal.edu.gt</p>
+                        </div>
+
+                        <hr>
+                        <button onclick="cerrarSesion()">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -145,7 +162,7 @@
                         <div class="img-personal-detalle">
 
                             <img src="../Img/img-defaul.webp" alt="imagen-personal">
-                        
+
 
                         </div>
 
