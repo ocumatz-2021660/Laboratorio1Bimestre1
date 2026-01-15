@@ -15,8 +15,8 @@ function renderizarTareas() {
                 <td class="${clasePrioridad}">${textoPrioridad}</td>
                 <td>${tarea.texto}</td>
                 <td class="opciones">
-                    <button class="btn-detalles" onclick="prepararEdicion(${index})">Editar</button>
-                    <button class="btn-detalles" style="border-color: #f54949; color: #f54949" onclick="eliminarTarea(${index})">Eliminar</button>
+                    <button class="btn-editar-contacto" onclick="prepararEdicion(${index})">Editar</button>
+                    <button class="btn-eliminar-contacto" onclick="eliminarTarea(${index})">Eliminar</button>
                 </td>
             </tr>
         `;
