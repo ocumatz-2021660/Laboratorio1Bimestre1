@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {}
 
-}
-
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(#FAE3E5, #FAEDE3);
     margin: 0;
@@ -13,7 +11,7 @@ body{
     justify-content: center;
 }
 
-.contenedor{
+.contenedor {
     width: 95%;
     max-width: 1000px;
     height: auto;
@@ -23,16 +21,21 @@ body{
     flex-direction: column;
     gap: 40px;
 }
-.contenedor-apartado-detalles{
-    position: relative; /*idea con srip*/
+
+.contenedor-apartado-detalles {
+    position: relative;
+    /*idea con srip*/
     overflow: hidden;
-    background-color: transparent;   
+    background-color: transparent;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     min-height: 450px;
-    
+
 }
-.contenedor-logo{
+
+.contenedor-logo {
     flex: 1;
     z-index: 5;
     background-image: url(../Img/Ingresar-img.webp);
@@ -43,25 +46,68 @@ body{
     justify-content: center;
     align-items: center;
     color: transparent;
-    padding: 40px;    
+    padding: 40px;
+
+    z-index: 5;
+    left: 20;
 }
-.contenedor-logo h3{
-    font-size: 1.5rem; /* el tamaño we*/
-    font-weight: 800; /* el ancho we*/
+
+.contenedor-logo h3 {
+    font-size: 1.5rem;
+    /* el tamaño we*/
+    font-weight: 800;
+    /* el ancho we*/
     margin-bottom: 20px;
-    color:white;
+    color: white;
     text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.contenedor-registro{
+/*Arreglando y preparando Login para movimiento js*/
+.contenedor-logo,
+.contenedor-registro {
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    transition: all 0.8s cubic-bezier(0.68, -0.90, 0.265, 1.55);
+}
+
+.animar-logo {
+    transform: translateX(-42%);
+    width: 50% !important;
+}
+
+.animar-registro {
+    transform: translateX(70%);
+    width: 50% !important;
+    opacity: 1 !important;
+}
+
+.btn-desactivado {
+    padding: 10px 25px;
+    width: 50%;
+    cursor: pointer;
+    font-weight: 600;
+    color: black;
+    background-color: gray;
+    border: 2.5px solid gray;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.contenedor-registro {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
     background-color: transparent;
+    z-index: 4;
+    left: 0;
+    opacity: 0;
 }
-.contenedor-opciones-registro{
+
+.contenedor-opciones-registro {
     min-height: 220px;
     height: auto;
     background: rgba(255, 255, 255, 0.4);
@@ -72,6 +118,7 @@ body{
     gap: 20px;
     padding: 20px;
 }
+
 .formulario-registro {
     display: flex;
     flex-direction: column;
@@ -79,7 +126,8 @@ body{
     max-width: 300px;
     gap: 10px;
 }
-.formulario-registro label{
+
+.formulario-registro label {
     font-size: 0.89rem;
     color: black;
     margin-bottom: 1px;
@@ -90,9 +138,9 @@ body{
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 9px;
-    width: 230px; 
+    width: 230px;
     height: auto;
-    
+
 }
 
 .btn-inisiarSesion {
@@ -104,15 +152,17 @@ body{
     background-color: #93F086;
     border: 1px solid #157306;
     border-radius: 25px;
-    transition: 0.3s;   
+    transition: 0.3s;
 }
-.btn-inisiarSesion:hover{
+
+.btn-inisiarSesion:hover {
     background-color: #5CC949;
     border: 1px solid #93F086;
     color: white;
     transition: 0.31s;
 }
-.btn-registro{
+
+.btn-registro {
     padding: 10px 25px;
     width: 50%;
     cursor: pointer;
@@ -121,15 +171,17 @@ body{
     background-color: #9BEBE8;
     border: 2.5px solid #499DF5;
     border-radius: 25px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
-.btn-registro:hover{
+
+.btn-registro:hover {
     background-color: #499DF5;
     border: 1px solid #9BEBE8;
     color: white;
     transition: 0.31s;
 }
-.contenedor-apartado-capturas{
+
+.contenedor-apartado-capturas {
     box-shadow: 0 0 60px rgba(7, 0, 0, 0.1);
     width: 100%;
     box-sizing: border-box;
@@ -143,9 +195,10 @@ body{
     margin-bottom: 50px;
     gap: 20px;
 }
-.apartado-fotos{
+
+.apartado-fotos {
     width: 100%;
-    height: 250px; 
+    height: 250px;
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -155,26 +208,60 @@ body{
 }
 
 .contenedor-apartado-fotos {
-    flex: 1; 
-    max-width: 50%; 
+    flex: 1;
+    max-width: 50%;
 }
 
 .contenedor-apartado-descripcion {
     flex: 1;
     padding: 20px;
 }
-.apartado-descripcion h2{
+
+.apartado-descripcion h2 {
     font-weight: 700;
 }
-.apartado-descripcion p{
+
+.apartado-descripcion p {
     line-height: 1.6;
 }
 
 @media (max-width: 768px) {
-    .contenedor-apartado-detalles, .contenedor-apartado-capturas {
+
+    .contenedor-apartado-detalles,
+    .contenedor-apartado-capturas {
         flex-direction: column;
     }
+
     .contenedor-logo {
+        width: 90%;
+        position: absolute;
         min-height: 200px;
+    }
+
+    .animar-logo {
+        transform: translateY(-30%) scale(0.9);
+        width: 90% !important;
+    }
+
+    .animar-registro {
+        transform: translateY(40%);
+        width: 90% !important;
+        opacity: 1 !important;
+        z-index: 6;
+    }
+
+    .contenedor-apartado-detalles {
+        min-height: 650px;
+        overflow: visible;
+    }
+
+    .formulario-registro input {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .contenedor-opciones-registro {
+        padding: 10px;
+        width: 100%;
     }
 }
