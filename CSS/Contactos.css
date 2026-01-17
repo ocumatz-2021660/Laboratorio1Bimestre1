@@ -91,7 +91,7 @@ aside {
 
 main {
     margin-left: 250px;
-    margin-top: 64px;
+    margin-top: 94px;
     height: 100vh;
     padding: 20px;
     box-sizing: border-box;
@@ -120,7 +120,7 @@ iframe {
     color: var(--seleccionado);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    border: none;
+    border: 1px solid black;
     transition: 0.3s;
 }
 
