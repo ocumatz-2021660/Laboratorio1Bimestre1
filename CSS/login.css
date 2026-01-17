@@ -32,6 +32,30 @@ body::before {
     z-index: -1;
     transform: scale(1.1);
 }
+.encabezado{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 5px;
+}
+.contenedor-logo-pagina{
+    padding: 10px;
+}
+.contenedor-logo-pagina img{
+    width: 50px;
+    height: auto;
+    
+}
+.contenedor-logo-pagina h3{
+    font-size: 1rem;    
+    font-weight: 800;    
+    color: white;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.3);
+}
 .contenedor {
     width: 95%;
     max-width: 1000px;
