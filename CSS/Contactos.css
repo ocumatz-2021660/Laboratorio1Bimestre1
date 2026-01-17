@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
+    --aceptar: #4682B4;
+    --denegar: #D93636;
     --color1: #E6D4CF;
     --color2: #8A7F47;
     --color3: #C8BF93;
@@ -46,7 +48,8 @@ header {
     width: 40px;
     height: 40px;
 }
-.header-izquierda h3{
+
+.header-izquierda h3 {
     color: white;
     text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -378,27 +381,31 @@ iframe {
     transition: 0.3s;
 }
 
-.btn-salir {
-    background: transparent;
-    border: 2px solid var(--texto-gris);
-    color: var(--texto-gris);
+.btn-salir-menu {
+    color: black;
+    background-color: var(--denegar);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px rgb(0, 0, 0);
 }
 
-.btn-salir:hover {
-    background: var(--texto-gris);
-    color: white;
+.btn-salir-menu:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 1px rgb(0, 0, 0);
+
 }
 
 
 .btn-editar {
-    background: transparent;
-    border: 2px solid var(--seleccionado);
-    color: var(--seleccionado);
+    background-color: var(--aceptar);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px rgb(0, 0, 0);
 }
 
 .btn-editar:hover {
-    background: var(--seleccionado);
-    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 1px rgb(0, 0, 0);
 }
 
 .datos-detalle-usuario {
