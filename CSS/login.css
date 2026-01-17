@@ -39,10 +39,9 @@ body::before {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 25px;
     gap: 5px;
 }
-.contenedor-logo-pagina{
+.contenedor-logo-pagina{    
     padding: 10px;
 }
 .contenedor-logo-pagina img{
@@ -50,7 +49,12 @@ body::before {
     height: auto;
     
 }
-.contenedor-logo-pagina h3{
+.contenedor-logo-texo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-logo-texo h3{
     font-size: 1rem;    
     font-weight: 800;    
     color: white;
