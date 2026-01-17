@@ -383,7 +383,7 @@ iframe {
 
 .btn-salir-menu {
     color: black;
-    background-color: var(--denegar);
+    background-color: var(--aceptar);
     border: 1.5px solid black;
     border-radius: 5px;
     box-shadow: 0px 3px 1px rgb(0, 0, 0);
@@ -394,20 +394,6 @@ iframe {
     box-shadow: 0px 7px 1px rgb(0, 0, 0);
 
 }
-
-
-.btn-editar {
-    background-color: var(--aceptar);
-    border: 1.5px solid black;
-    border-radius: 5px;
-    box-shadow: 0px 3px 1px rgb(0, 0, 0);
-}
-
-.btn-editar:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 7px 1px rgb(0, 0, 0);
-}
-
 .datos-detalle-usuario {
     flex: 2;
     display: flex;
