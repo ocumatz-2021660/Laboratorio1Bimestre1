@@ -171,8 +171,9 @@ body::before {
 .contenedor-opciones-registro {
     min-height: 220px;
     height: auto;
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.4);    
+    backdrop-filter: blur(19px);
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,7 +199,7 @@ body::before {
 .formulario-registro input {
     padding: 8px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 9px;
     width: 230px;
     height: auto;
