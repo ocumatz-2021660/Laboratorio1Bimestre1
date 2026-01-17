@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {    
+:root {
     --colorDefaul: #F8F9FA;
-    --titulos: #4682B4;
-    --bloques: ##6C757D;
+    --aceptar: #4682B4;
+    --denegar: #D93636;
+    --bloques: #6C757D;
+    --color-especiales: #DEC4AB;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -15,6 +18,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 body::before {
     content: "";
     position: fixed;
@@ -26,13 +30,14 @@ body::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
-    filter: blur(8px); 
-    
+
+    filter: blur(8px);
+
     z-index: -1;
     transform: scale(1.1);
 }
-.encabezado{
+
+.encabezado {
     width: 100%;
     height: auto;
     display: flex;
@@ -41,25 +46,30 @@ body::before {
     align-items: center;
     gap: 5px;
 }
-.contenedor-logo-pagina{    
+
+.contenedor-logo-pagina {
     padding: 10px;
 }
-.contenedor-logo-pagina img{
+
+.contenedor-logo-pagina img {
     width: 50px;
     height: auto;
-    
+
 }
-.contenedor-logo-texo{
+
+.contenedor-logo-texo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contenedor-logo-texo h3{
-    font-size: 1rem;    
-    font-weight: 800;    
+
+.contenedor-logo-texo h3 {
+    font-size: 1rem;
+    font-weight: 800;
     color: white;
     text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 .contenedor {
     width: 95%;
     max-width: 1000px;
@@ -137,9 +147,11 @@ body::before {
     cursor: pointer;
     font-weight: 600;
     color: black;
+    background-color: var(--aceptar);
+    border: 1.5px solid black;
+    box-shadow: 0px 3px 1px rgb(0, 0, 0);
+    border-radius: 5px;
     background-color: gray;
-    border: 2.5px solid gray;
-    border-radius: 25px;
     transition: all 0.3s ease;
     pointer-events: none;
 }
@@ -182,6 +194,7 @@ body::before {
     margin-bottom: 1px;
     font-weight: 600;
 }
+
 .formulario-registro input {
     padding: 8px;
     margin-bottom: 20px;
@@ -198,17 +211,16 @@ body::before {
     cursor: pointer;
     font-weight: 600;
     color: black;
-    background-color: #93F086;
-    border: 1px solid #157306;
-    border-radius: 25px;
+    background-color: var(--aceptar);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px rgb(0, 0, 0);
     transition: 0.3s;
 }
 
 .btn-inisiarSesion:hover {
-    background-color: #5CC949;
-    border: 1px solid #93F086;
-    color: white;
-    transition: 0.31s;
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 1px rgb(0, 0, 0);
 }
 
 .btn-registro {
@@ -217,18 +229,18 @@ body::before {
     cursor: pointer;
     font-weight: 600;
     color: black;
-    background-color: #9BEBE8;
-    border: 2.5px solid #499DF5;
-    border-radius: 25px;
+    background-color: var(--color-especiales);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px rgb(0, 0, 0);
     transition: all 0.3s ease;
 }
 
 .btn-registro:hover {
-    background-color: #499DF5;
-    border: 1px solid #9BEBE8;
-    color: white;
-    transition: 0.31s;
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 1px rgb(0, 0, 0);
 }
+
 footer {
     width: 100%;
     background: rgba(82, 28, 3, 0.7);
@@ -238,11 +250,12 @@ footer {
     padding-top: 40px;
     margin-top: 125px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;    
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-.footer-datos{
+
+.footer-datos {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -250,6 +263,7 @@ footer {
     flex-wrap: wrap;
     padding: 10px 50px 10px 50px;
 }
+
 .footer-contenido {
     width: 90%;
     max-width: 1000px;
@@ -339,7 +353,8 @@ footer {
         padding: 10px;
         width: 100%;
     }
-    .footer .footer-datos{
+
+    .footer .footer-datos {
         display: flex;
         flex-direction: column;
     }
