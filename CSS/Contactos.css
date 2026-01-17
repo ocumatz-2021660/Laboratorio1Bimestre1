@@ -262,17 +262,17 @@ iframe {
     width: 30%;
     cursor: pointer;
     font-weight: 600;
-    color: #f54949;
-    background: rgba(255, 255, 255, 0.35);
-    border: 2.5px solid #f54949;
-    border-radius: 25px;
+    color: black;
+    background-color: var(--denegar);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px rgb(0, 0, 0);
     transition: 0.3s;
 }
 
 .btn-cancelar:hover {
-    background: #f54949;
-    color: white;
-    transition: 0.3s;
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 1px rgb(0, 0, 0);
 }
 
 .btn-new-contacto {
@@ -280,17 +280,17 @@ iframe {
     width: 30%;
     cursor: pointer;
     font-weight: 600;
-    color: #499DF5;
-    background: rgba(255, 255, 255, 0.35);
-    border: 2.5px solid #499DF5;
-    border-radius: 25px;
+    color: black;
+    background-color: var(--aceptar);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px rgb(0, 0, 0);
     transition: 0.3s;
 }
 
 .btn-new-contacto:hover {
-    background: #499DF5;
-    color: white;
-    transition: 0.3s;
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 1px rgb(0, 0, 0);
 }
 
 /*Detalles contacto*/
@@ -378,7 +378,7 @@ iframe {
     font-weight: 600;
     transition: 0.3s;
     cursor: pointer;
-    padding: 10px;  
+    padding: 10px;
     color: black;
     background-color: var(--aceptar);
     border: 1.5px solid black;
@@ -548,17 +548,18 @@ iframe {
     cursor: pointer;
     font-weight: 600;
     text-align: center;
-    color: #4977f5;
-    background: rgba(255, 255, 255, 0.35);
-    border: 1.5px solid #4977f5;
-    border-radius: 25px;
+    color: black;
+    background-color: var(--aceptar);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px rgb(0, 0, 0);
     transition: 0.3s;
 
 }
 
 .btn-editar-contacto:hover {
-    background: #4977f5;
-    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 1px rgb(0, 0, 0);
 }
 
 .btn-eliminar-contacto {
@@ -567,16 +568,17 @@ iframe {
     cursor: pointer;
     font-weight: 600;
     text-align: center;
-    color: #f54949;
-    background: rgba(255, 255, 255, 0.35);
-    border: 1.5px solid #f54949;
-    border-radius: 25px;
+    color: black;
+    background-color: var(--denegar);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px rgb(0, 0, 0);
     transition: 0.3s;
 }
 
 .btn-eliminar-contacto:hover {
-    background: #f54949;
-    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 1px rgb(0, 0, 0);
 }
 
 @media (max-width: 480px) {

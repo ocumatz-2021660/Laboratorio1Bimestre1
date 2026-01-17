@@ -10,6 +10,7 @@ body{
 .Tabla-contactos{
     width: 100%; 
     border-collapse: collapse;
+    border-color: black;
 }
 th{
     text-align: left; 
