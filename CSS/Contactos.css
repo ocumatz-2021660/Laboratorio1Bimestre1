@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
+    --color1: #E6D4CF;
+    --color2: #8A7F47;
+    --color3: #C8BF93;
     --primer-color: #FAE3E5;
     --segundo-color: #FAEDE3;
     --opciones-nav: #ffffff;
     --encabezado: #ffffff;
     --texto-gris: #5f6368;
     --seleccionado: #1a73e8;
-    --borde: #dadce0;
+    --borde: #111318;
 }
 
 body {
@@ -16,7 +19,7 @@ body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     background-color: var(--primer-color);
-    background: linear-gradient(#FAE3E5, #FAEDE3);
+    background: var(--color1);
     /*overflow: hidden;*/
 }
 
@@ -24,7 +27,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--encabezado);
+    background-color: var(--color2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +45,10 @@ header {
 .header-izquierda img {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+}
+.header-izquierda h3{
+    color: white;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .header-derecho {
@@ -61,7 +67,7 @@ aside {
     left: 0;
     width: 150px;
     height: 100%;
-    background-color: var(--opciones-nav);
+    background-color: var(--color3);
     border-right: 1px solid var(--borde);
     padding-top: 20px;
 }
@@ -71,7 +77,8 @@ aside {
     padding: 12px 24px;
     display: flex;
     align-items: center;
-    color: var(--texto-gris);
+    color: black;
+    font-size: 19px;
     cursor: pointer;
     border-radius: 0 25px 25px 0;
     margin-right: 10px;
@@ -440,6 +447,8 @@ iframe {
     max-width: 4vw;
     height: auto;
     border-radius: 50%;
+    border: 1px solid black;
+    background: white;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
