@@ -373,15 +373,12 @@ iframe {
     width: 100%;
 }
 
-.seccion-btn-detalle button {
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: 0.3s;
-}
 
 .btn-salir-menu {
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px;  
     color: black;
     background-color: var(--aceptar);
     border: 1.5px solid black;
@@ -394,6 +391,7 @@ iframe {
     box-shadow: 0px 7px 1px rgb(0, 0, 0);
 
 }
+
 .datos-detalle-usuario {
     flex: 2;
     display: flex;
@@ -471,18 +469,19 @@ iframe {
     border: none;
     cursor: pointer;
     font-weight: 600;
-    color: #f54949;
-    background: rgba(255, 255, 255, 0.35);
-    border: 2.5px solid #f54949;
-    border-radius: 25px;
+    color: black;
+    background-color: var(--denegar);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px rgb(0, 0, 0);
     margin-top: 10px;
     transition: 0.3s;
 
 }
 
 .menu-emergente-usuario button:hover {
-    background-color: #f54949;
-    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 1px rgb(0, 0, 0);
 
 }
 
